@@ -71,7 +71,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             globalFailed = false;
             isDisable = false;
         } else if (!connection && !isDisable) {
-            prepareAndSendMessage(botConfig.getChatId(), "Світло пропало \uD83C\uDF11");
+            prepareAndSendMessage(botConfig.getChatId(), "Світло зникло \uD83C\uDF11");
             isEnabled = false;
             isDisable = true;
         } else {
